@@ -80,14 +80,14 @@ ul li a.active{
   border-style: hidden outset outset hidden ;
   border-radius: 0px 0px 15px 15px ;
   padding: 10px;
-  min-height: 500px;
+  min-height: 200px;
 }
 
 #blog .blogContent{
   border-style: hidden outset outset hidden;
   border-radius:  15px;
-  min-height: 300px;
   max-height: 1000px;
+  min-height: 250px;
   margin-top: 15px;
 }
 
@@ -102,6 +102,12 @@ ul li a.active{
   border-radius:  15px 15px 0px 0px;
   background-color: #333333;
   font-size: 25px;
+}
+#blog .blogContent .blogImange{
+  padding-right: 15px;
+  width: 30%;
+  border-width: 1;
+  border-color: green;
 }
 
 footer{

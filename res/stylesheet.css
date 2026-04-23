@@ -20,7 +20,7 @@ body{
 
 /* <!--navigation--> */
 nav{
-  position:fixed;
+  position:sticky;
   bottom: 0%;
   width: 100%;
 }
@@ -62,54 +62,85 @@ ul li a.active{
 }
 
 /* nav page direction  */
-#projects, #about-me {
-  background-color:#333333;
-  border-style:  outset  outset hidden hidden ;
-  padding: 50px;
-  margin: 0px;
-  border-radius: 15px 15px 0px 0px;
+#projects, #underSection {
+  background-color:rgb(41, 41, 41);
+  border-style:  outset ;
   color: white;
+  padding: 50px;
+  border-radius: 15px 15px 0px 0px;
   font-size: 30px;
 }
 
-#blog{
-  color: white;
-  margin: 0;
-  margin-bottom: 30px;
-  background-color: #111111;
-  border-style: hidden outset outset hidden ;
-  border-radius: 0px 0px 15px 15px ;
-  padding: 10px;
-  min-height: 200px;
+
+.blog{
+  color:white;
+  position:fixed;
+  min-width: 95%;
 }
 
-#blog .blogContent{
-  border-style: hidden outset outset hidden;
-  border-radius:  15px;
-  max-height: 1000px;
+#blog .content{
+  position: relative;
+  max-height: 10000px;
   min-height: 250px;
-  margin-top: 15px;
-}
-
-#blog .blogContent .blogText{
-  width: 65%;
-  text-align: left;
-  padding-left: 5px;
-}
-
-#blog .blogContent .blogTitle{
-  padding-left: 15px;
-  border-radius:  15px 15px 0px 0px;
+  border-style: outset ;
   background-color: #333333;
-  font-size: 25px;
+  border-radius:  0px 0px 15px  15px;
+
 }
-#blog .blogContent .blogImange{
-  padding-right: 15px;
-  width: 30%;
-  border-width: 1;
-  border-color: green;
+
+#sector{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: white;
+  margin: 15px;
+  font-size: 24px;
+  background-color: rgb(88, 88, 88);
+  min-width:  70%;
+  min-height: 250px;
+  border-style:   outset ;
+  border-radius: 15px ;
+}
+
+#sector .heading{
+  width: 100%;
+  border-bottom: 15px solid white;
+  top: 0;
+  font-size: 30px;
+  height: 20%;
+}
+
+#sector .body{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+#sector .text{
+  top: 40%;
+   width: 40%;
+  height: 80%;
+  float:left;
+  font-size: 35px;
+}
+
+#sector .image{
+  float:right;
+  margin-top: 10px;
+  margin-left:10%;
+  padding:20px;
+  margin-right:1%;
+  width: 20%;
+}
+
+
+#sector .link{
+  bottom: 0;
+  width: 45%;
+  float:left;
 }
 
 footer{
-  height: 500px;
+  height: 100px;
 }

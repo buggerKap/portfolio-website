@@ -3,7 +3,6 @@
 .MainPageHeader-body
 {
   height: 1000px;
-  position:relative;
   border: 0px;
   padding: 0px;
   margin: 0px;
@@ -11,9 +10,6 @@
 
 /* <!--body--> */
 body{
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
   background-color:black;
    font-family: Verdana, sans-serif;
 }
@@ -67,8 +63,7 @@ ul li a.active{
   border-style:  outset ;
   color: white;
   padding: 50px;
-  border-radius: 15px 15px 0px 0px;
-  font-size: 30px;
+
 }
 
 
@@ -90,6 +85,8 @@ ul li a.active{
 
 #sector{
   display: flex;
+  background-color: red;
+
   flex-wrap: wrap;
   justify-content: flex-start;
   color: white;
@@ -104,10 +101,10 @@ ul li a.active{
 
 #sector .heading{
   width: 100%;
-  border-bottom: 15px solid white;
   top: 0;
   font-size: 30px;
   height: 20%;
+
 }
 
 #sector .body{
@@ -119,26 +116,78 @@ ul li a.active{
 
 #sector .text{
   top: 40%;
-   width: 40%;
-  height: 80%;
+  width: 40%;
   float:left;
   font-size: 35px;
 }
 
-#sector .image{
+#sector .text2{
+  top: 40%;
+  float:left;
+  font-size: 35px;
+}
+#sector .imageSection {
+  position: relative;
+  width: 30%;
   float:right;
   margin-top: 10px;
-  margin-left:10%;
-  padding:20px;
-  margin-right:1%;
-  width: 20%;
+  margin-left:20%;
+  margin-right:2%;
+  height: 300px;
+  border-radius: 15px;
+  border-style: outset ;
+  background-color: black;
 }
 
+#sector .image
+{
+  display: block;
+  margin:auto;
+  height: 100%;
+}
+
+
+#sector .image2
+{
+  display: block;
+  margin:auto;
+  height: 100%;
+}
+
+.prev,
+.next {
+   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next{
+  right: 0;
+}
+.prev{
+  left: 0;
+}
 
 #sector .link{
   bottom: 0;
   width: 45%;
   float:left;
+}
+video{
+  background-color: black;
+  border-radius: 15px;
+}
+img{
+  border-radius: 15px;
 }
 
 footer{

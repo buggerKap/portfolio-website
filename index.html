@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
     <head>
         <link rel ="stylesheet" href="res/stylesheet.css">
-        <script src = "res/myScripts.js"></script>
+      
         <link rel = "icon" type ="image/x-icon" href="res/image/steven.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>tyler brass portoflio</title>
@@ -15,7 +15,7 @@
         <ul>
             <li><a href ="#projects">Projects</a></li>
             <li><a href ="#underSection">About-me</a></li>
-            <li><a href="eduction.HTML">Education</a></li>
+            <li><a href="eduction.html">Education</a></li>
         </ul>
         </div>
     </nav>
@@ -23,7 +23,7 @@
 <!--section-->
 <section>
 <!--brief discussion of the projects i am currently working or really proud of-->
-<h2 id ="projects">PROJECTS</h2>
+<h1 id ="projects">PROJECTS</h2>
   <div id = "blog">
     <div class="content">
       <!--project sphere mesh generation-->
@@ -33,41 +33,78 @@
               <h2>sphere Mesh generation</h2>
           </div>
         <div class="body">
-
           <div class="text">
-            <p>this project is prototype for upcoming project, in which would depicted an simulation of the solar system. 
-              For this project instead of sphere mesh but instead it should use trigonogemetry principles to create a spherical mesh. </p>
+            <p>This project is prototype for upcoming project, in which would depicted an simulation of the solar system. 
+              For this project instead of storing a 3D model of mesh but instead it uses trigonogemetry principles to generateda spherical mesh. </p>
+              <p> By generating the mesh the program is given more freedom over the actual object, allowing for the same application to render a high 
+                or low poly mesh, without the need to read in from memory.
+                </p>
+                <div class = "link">
+            <p>Link: <a href = "https://github.com/buggerKap/AtomSimulation" >AtomSimulation<a> </p>
           </div>
- <div class = "image">
-              <video width="350" height="350">
+          </div>
+
+          <div class ="imageSection">
+
+          <div class = "image">
+              <video  width="100%" height="100%" controls>
                 <source src = "res/video/high poly.mp4" type ="video/mp4">
                 video file not supported
                 </video>
+               
             </div>
-      
-          </div>
-          <div class = "link">
-            <p>Link: <a href = "https://github.com/buggerKap/AtomSimulation" >AtomSimulation<a> </p>
-          </div>
-          
-      </div>
-         
-         
 
-    <!-- <div id = "sector">
-      <div class = "heading">LAB-RAT</div>
-        <div class="text">
-            <p>Lab rat is an 3rd person platformer, in which the player plays as rat going through a series of test,
-            the project was meant to explore the ethical concerns animal testing via environment and gameplay mechanics.</p>
+            <div class = "image">
+              <video width="100%" height="100%" controls>
+                <source src = "res/video/low poly.mp4" type ="video/mp4">
+                video file not supported
+                </video>
+            </div>
+              <a class ="next" onclick="plusSlides('image',1)" >></a>
+              <a class ="prev" onclick="plusSlides('image',-1)" ><</a>
+          </div>
+          </div>
+      </div>
+    <!--lab rat (project)-->
+      <div id = "sector">
+        <div class = "heading">
+          <h2>Lab Rat</h2></div>
+      <div class="body">
+        <div class ="text">
+           <p>Lab rat is an 3rd person platformer, in which the player plays as rat going through a series of test,
+              the project was meant to explore the ethical concerns of animal testing via the environment and gameplay mechanics.</p>
+              <div class = "link">
+                   <p>Link: <a href = "https://github.com/buggerKap/AtomSimulation" >AtomSimulation<a> </p>
+          </div>
+        </div>
+         <div class ="imageSection">
+
+          <div class="image2">
+            <img src = "res/image/projects/lab-rat/1.png" alt = "logo" width="100%" height="100%">
+            </div>
+
+          <div class="image2">
+            <img src = "res/image/projects/lab-rat/2.png" alt ="lab-rats"  width="100%" height="100%">
+            </div>
+
+            <div class = "image2">
+              <img src = "res/image/projects/lab-rat/3.png" alt = "lab"  width="100%" height="100%">
+              </div>
+          
+                <a class ="next" onclick="plusSlides('image2',1)" >></a>
+              <a class ="prev" onclick="plusSlides('image2',-1)" ><</a>
+          </div>
+           
+          </div>
+      </div>
+      </div>
+      </div>
         </div>
         
-          <div class="link:"><p>link: <a href="https://gcugames.itch.io/lab-rat">Lab-rat</a></p>
-          </div>
-    </div> -->
-  </div>
+        </div>
 
       <!-- about me<> -->
-        <h2 id = "underSection">ABOUT-ME:</h2>
+        <h1 id = "underSection">ABOUT-ME</h1>
          <div id = "blog">
           <div class="content">
                 <div id = "sector">
@@ -80,7 +117,7 @@
         </div>
 
       <!-- contacts -->
-        <h2 id = "underSection">CONTACTS</h2>
+        <h2 id = "underSection">CONTACT</h2>
         <div id = blog>
           <div class=" content">
             <div id ="sector">
@@ -91,7 +128,10 @@
             </div>
           </div>
         </div>
+       
   </section>
   <footer>
+      <script src = "res/myScripts.js">
+        </script> 
   </footer>
 </body>
